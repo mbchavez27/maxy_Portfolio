@@ -1,2 +1,3 @@
-# maxy_Portfolio
-Repository for my Portfolio using 
+# Maxy Portfolio
+
+My Portfolio created using React JS
