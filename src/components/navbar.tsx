@@ -1,13 +1,21 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [isVisible, setisVisible] = useState(false);
 
   useEffect(() => {
     setisVisible(true);
-    console.log(isVisible);
   }, []);
+
+  const [lineValue, setLineValue] = useState(0);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname == "/") setLineValue(5);
+    else if (location.pathname == "/Projects") setLineValue(20);
+    else if (location.pathname == "/Experiences") setLineValue(35);
+  }, [location.pathname]);
 
   return (
     <>
@@ -41,7 +49,9 @@ const NavBar = () => {
         </div>
         <div>
           <div className="w-[40em] h-1 mt-4 mx-1 rounded-lg bg-gradient-to-r from-[#FFFFFF] to-[#A9A6A6]"></div>
-          <div className="w-[35em] h-1 mt-2 mx-1 rounded-lg bg-gradient-to-r from-[#FFFFFF] to-[#A9A6A6]"></div>
+          <div
+            className={`transition-all duration-500 w-[${lineValue}em] h-1 mt-2 mx-1 rounded-lg bg-gradient-to-r from-[#FFFFFF] to-[#A9A6A6]`}
+          ></div>
         </div>
       </div>
     </>
