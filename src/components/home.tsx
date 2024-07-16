@@ -5,7 +5,6 @@ const Home = () => {
 
   useEffect(() => {
     setisVisible(true);
-    console.log(isVisible);
   }, []);
   return (
     <>

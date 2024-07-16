@@ -1,17 +1,11 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./components/home";
 import NavBar from "./components/navbar";
+import Projects from "./components/projects";
+import Experiences from "./components/experiences";
 
 const App = () => {
-  const [isVisible, setisVisible] = useState(false);
-
-  useEffect(() => {
-    setisVisible(true);
-    console.log(isVisible);
-  }, []);
-
   return (
     <>
       <Router>
@@ -19,6 +13,11 @@ const App = () => {
           <div className="h-screen bg-noisePattern absolute inset-0">
             <Routes>
               <Route path="/" element={<Home></Home>}></Route>
+              <Route path="/Projects" element={<Projects></Projects>}></Route>
+              <Route
+                path="/Experiences"
+                element={<Experiences></Experiences>}
+              ></Route>
             </Routes>
           </div>
           <NavBar></NavBar>

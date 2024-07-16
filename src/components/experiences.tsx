@@ -5,7 +5,6 @@ const Experiences = () => {
 
   useEffect(() => {
     setisVisible(true);
-    console.log(isVisible);
   }, []);
 
   return (

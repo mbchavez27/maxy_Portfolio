@@ -8,15 +8,18 @@ const NavBar = () => {
     setisVisible(true);
   }, []);
 
-  const [lineValue, setLineValue] = useState(0);
+  const [lineValue, setLineValue] = useState("5em");
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname == "/") setLineValue(5);
-    else if (location.pathname == "/Projects") setLineValue(20);
-    else if (location.pathname == "/Experiences") setLineValue(35);
+    if (location.pathname == "/") setLineValue("5em");
+    else if (location.pathname == "/Projects") setLineValue("20em");
+    else if (location.pathname == "/Experiences") setLineValue("35em");
   }, [location.pathname]);
 
+  useEffect(() => {
+    console.log(lineValue);
+  });
   return (
     <>
       <div
@@ -50,7 +53,7 @@ const NavBar = () => {
         <div>
           <div className="w-[40em] h-1 mt-4 mx-1 rounded-lg bg-gradient-to-r from-[#FFFFFF] to-[#A9A6A6]"></div>
           <div
-            className={`transition-all duration-500 w-[${lineValue}em] h-1 mt-2 mx-1 rounded-lg bg-gradient-to-r from-[#FFFFFF] to-[#A9A6A6]`}
+            className={`transition-all duration-500 w-[${lineValue}] h-1 mt-2 mx-1 rounded-lg bg-gradient-to-r from-[#FFFFFF] to-[#A9A6A6]`}
           ></div>
         </div>
       </div>
