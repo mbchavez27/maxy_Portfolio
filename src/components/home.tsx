@@ -15,10 +15,10 @@ const Home = () => {
           }`}
         >
           <div className="mx-24 h-72">
-            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#A9A6A6] bg-clip-text text-transparent font-bold text-8xl">
+            <div className="font-PlayFair bg-gradient-to-r from-[#FFFFFF] to-[#A9A6A6] bg-clip-text text-transparent font-bold text-8xl">
               Max Chavez
             </div>
-            <div className="bg-gradient-to-r from-[#FFFFFF] to-[#A9A6A6] bg-clip-text text-transparent font-medium text-2xl mt-8">
+            <div className="font-Raleway bg-gradient-to-r from-[#FFFFFF] to-[#A9A6A6] bg-clip-text text-transparent font-medium text-2xl mt-8">
               Computer Science Student - Front End Developer <br />- Aspiring
               Startup Founder
             </div>

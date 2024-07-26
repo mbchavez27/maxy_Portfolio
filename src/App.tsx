@@ -9,8 +9,9 @@ const App = () => {
   return (
     <>
       <Router>
-        <div className="font-Monsterrat bg-gradient-to-r from-[#A81818] to-[#6A1A1A] h-screen">
-          <div className="h-screen bg-noisePattern absolute inset-0">
+        <div className="bg-gradient-to-r from-[#A81818] to-[#6A1A1A] h-screen">
+          <div className="h-screen bg-noisePattern absolute inset-0 z-0"></div>
+          <div className="absolute z-10">
             <Routes>
               <Route path="/" element={<Home></Home>}></Route>
               <Route path="/Projects" element={<Projects></Projects>}></Route>

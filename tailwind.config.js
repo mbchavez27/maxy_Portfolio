@@ -7,7 +7,8 @@ export default {
         noisePattern: "url('./assets/noiseTexture.png')",
       },
       fontFamily: {
-        Monsterrat: ["Montserrat", "sans-serif"],
+        PlayFair: ["Playfair Display", "serif"],
+        Raleway: ["Raleway", "sans-serif"],
       },
     },
   },

@@ -8,11 +8,11 @@ const NavBar = () => {
     setisVisible(true);
   }, []);
 
-  const [lineValue, setLineValue] = useState("5em");
+  const [lineValue, setLineValue] = useState("6em");
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname == "/") setLineValue("5em");
+    if (location.pathname == "/") setLineValue("6em");
     else if (location.pathname == "/Projects") setLineValue("18em");
     else if (location.pathname == "/Experiences") setLineValue("33em");
   }, [location.pathname]);
@@ -23,7 +23,7 @@ const NavBar = () => {
   return (
     <>
       <div
-        className={`flex h-screen flex-col justify-end items-end px-24 py-8 transform transition duration-500  ${
+        className={`font-Raleway flex h-screen flex-col justify-end items-end px-24 py-8 transform transition duration-500  ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
