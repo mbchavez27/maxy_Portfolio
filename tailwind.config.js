@@ -7,8 +7,9 @@ export default {
         noisePattern: "url('./assets/noiseTexture.png')",
       },
       fontFamily: {
-        PlayFair: ["Playfair Display", "serif"],
-        Raleway: ["Raleway", "sans-serif"],
+        Mulish: ["Mulish", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
+        Arimo: ["Arimo", "sans-serif"],
       },
     },
   },
